@@ -23,7 +23,7 @@ def send_message(request):
             subject = f"New Contact Message from {name}"
             message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{content}"
             from_email = email
-            recipient_list = ["Chetaspatel1345@gmail.com"]
+            recipient_list = [HOST_MAIL]
             # Send the email (no recipients specified)
             send_mail(subject, 
                     message, 
